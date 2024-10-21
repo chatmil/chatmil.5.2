@@ -24,7 +24,7 @@ const Copyright = () => {
 		<Typography variant="body2" color="#fff" align="center">
 			{"Copyright "}
  			<Link color="#fff" href="#">
- 				Core Sistemas
+ 				ChatMil CRM
  			</Link>{" "}
  			{new Date().getFullYear()}
  			{"."}
