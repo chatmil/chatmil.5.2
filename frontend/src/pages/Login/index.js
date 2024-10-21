@@ -100,13 +100,7 @@ const useStyles = makeStyles((theme) => ({
 		margin: "0 auto",
 		content: "url(" + (theme.mode === "light" ? theme.calculatedLogoLight() : theme.calculatedLogoDark()) + ")",
 	},
-	iconButton: {
-		position: "absolute",
-		top: 10,
-		right: 10,
-		color: theme.mode === "light" ? "black" : "white",
-	},
-}));
+})); 
 
 const Login = () => {
 	const classes = useStyles();
@@ -143,16 +137,13 @@ const handleChangeInput = (name, value) => {
 	return (
 		<>
 			<Helmet>
-				<title>{appName || "WORKZAP"}</title>
+				<title>{appName || "CHATMIL"}</title>
 				<link rel="icon" href={appLogoFavicon || "/default-favicon.ico"} />
 			</Helmet>
 			<div className={classes.root}>
 				<Container component="main" maxWidth="xs">
 					<CssBaseline />
 					<div className={classes.paper}>
-						<IconButton className={classes.iconButton} onClick={colorMode.toggleColorMode}>
-							{mode === "dark" ? <Brightness7Icon /> : <Brightness4Icon />}
-						</IconButton>
 						<div>
 							<img className={classes.logoImg} alt="logo" />
 						</div>
@@ -229,7 +220,7 @@ const handleChangeInput = (name, value) => {
 							)}
 						</form>
 					</div>
-<Box> Copyright 2024 - Core Sistemas </Box>
+<Box> Copyright 2024 - ChatMil CRM </Box>
 				</Container>
 			</div>
 		</>
